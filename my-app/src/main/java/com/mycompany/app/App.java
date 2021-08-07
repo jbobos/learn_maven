@@ -9,10 +9,12 @@ import org.apache.logging.log4j.LogManager;
  */
 public class App 
 {
-    static final Logger logger = LogManager.getLogger(App.class);
+    static final Logger logger1 = LogManager.getLogger("Primary");
+    static final Logger logger2 = LogManager.getLogger("Secondary");
 
     public static void main( String[] args )
     {
-        logger.debug("Hello World!");
+        logger1.debug("Hello Primary!");
+        logger2.debug("Hello Secondary!");
     }
 }
